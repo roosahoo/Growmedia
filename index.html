@@ -731,6 +731,11 @@
 
             .hero {
                 grid-template-columns: 1fr;
+
+                min-height: auto;
+                /* lisätty */
+                padding-top: 100px;
+                /* lisätty */
             }
 
             .hero-left {
@@ -739,6 +744,21 @@
 
             .hero-right {
                 padding: 20px 20px 60px;
+            }
+
+            .hero-title {
+                /* lisätty */
+                font-size: 36px;
+            }
+
+            .hero-card {
+                /* lisätty */
+                padding: 28px;
+            }
+
+            .hero-stat-num {
+                /* lisätty */
+                font-size: 56px;
             }
 
             .about-section {
@@ -804,7 +824,8 @@
             <div class="hero-tag fade-up" id="hero-tag">Suomen johtava AI-markkinointikoulutus</div>
             <h1 class="hero-title fade-up-2" id="hero-title">Tee AI:sta<br><span class="pink">kilpailuetusi</span></h1>
             <p class="hero-subtitle fade-up-3" id="hero-subtitle">Käytännön koulutus markkinoijille, joka yhdistää syvän
-                AI-osaamisen ja markkinoinnin asiantuntemuksen. Suojaa urasi — opi tekoälyn avulla tekemään enemmän.</p>
+                AI-osaamisen ja markkinoinnin asiantuntemuksen. Suojaa urasi ja opi tekoälyn avulla tekemään enemmän.
+            </p>
             <div class="hero-ctas fade-up-4">
                 <a href="#courses" class="btn-primary" id="hero-cta1">Tutustu kursseihin</a>
                 <a href="#contact" class="btn-secondary" id="hero-cta2">Ota yhteyttä</a>
@@ -816,7 +837,7 @@
                 <div class="hero-stat-label" id="stat1-label">markkinointitehtävistä muuttuu AI:n myötä lähivuosina
                 </div>
                 <div class="hero-divider"></div>
-                <div class="hero-quote" id="hero-quote">"AI ei korvaa markkinoijaa — mutta markkinoija joka osaa AI:n
+                <div class="hero-quote" id="hero-quote">"AI ei korvaa markkinoijaa — mutta markkinoija joka taitaa AI:n
                     korvaa sinut."</div>
             </div>
         </div>
@@ -831,7 +852,8 @@
                     <p>Grow Media Oy syntyi tarpeesta. Markkinointi muuttuu nopeammin kuin koskaan ennen, ja monella
                         alan ammattilaisella ei ole välineitä pysyä mukana.</p>
                     <p>Yhdistimme AI-asiantuntemuksen ja markkinoinnin syvällisen osaamisen luodaksemme koulutuksia,
-                        jotka ovat täysin käytännöllisiä — ei teorioita, vaan työkaluja joita voi käyttää heti huomenna.
+                        jotka ovat täysin käytännöllisiä. Ei pelkkiä teorioita, vaan työkaluja joita voi käyttää heti
+                        huomenna.
                     </p>
                     <p>Kaikki kurssimme on suunniteltu niin, että niiden jälkeen tiedät tarkalleen mitä tehdä
                         seuraavaksi.</p>
@@ -870,7 +892,7 @@
                 <div class="section-label" id="courses-label">Kurssit</div>
                 <h2 class="section-title" id="courses-title">Valitse polkusi</h2>
             </div>
-            <p class="courses-intro" id="courses-intro">Ei teknistä taustaa tarvita.<br>Vain halu oppia ja kehittyä.</p>
+            <p class="courses-intro" id="courses-intro">Teknistä taustaa ei tarvita.<br>Vain halu oppia ja kehittyä.</p>
         </div>
         <div class="courses-grid">
             <div class="course-card">
@@ -925,7 +947,7 @@
                 <li id="cb1">Suorita kurssi ja läpäise tentit 80% tuloksella</li>
                 <li id="cb2">Saat henkilökohtaisen digitaalisen sertifikaatin</li>
                 <li id="cb3">Lisää suoraan LinkedIn-profiiliisi</li>
-                <li id="cb4">Erottuu CV:ssä työnantajille</li>
+                <li id="cb4">Erottuu CV:llä työnantajille</li>
             </ul>
         </div>
     </section>
@@ -933,15 +955,16 @@
     <section class="contact-section" id="contact">
         <div class="contact-inner">
             <div class="section-label" id="contact-label">Yhteystiedot</div>
-            <h2 class="contact-title" id="contact-title">Otetaan yhteyttä</h2>
+            <h2 class="contact-title" id="contact-title">Ollaan yhteyksissä</h2>
             <p class="contact-subtitle" id="contact-subtitle">Onko sinulla kysymyksiä kursseista tai haluatko
-                lisätietoja? Kirjoita meille — vastaamme nopeasti.</p>
+                lisätietoja? Kirjoita meille.</p>
             <a href="mailto:info@growmedia.fi" class="contact-email-link">✉ info@growmedia.fi</a>
         </div>
     </section>
 
     <footer>
-        <img src="media/logo2.svg" alt="Grow Media" style="filter:brightness(0) invert(1);opacity:0.4;" />
+        <!--<img src="media/logo2.svg" alt="Grow Media" style="filter:brightness(0) invert(1);opacity:0.4;" />-->
+        <img src="media/logo2.svg" alt="Grow Media" />
         <div class="footer-copy" id="footer-copy">© 2025 Grow Media Oy · info@growmedia.fi</div>
     </footer>
 
@@ -977,12 +1000,12 @@
                 'nav-about': 'About', 'nav-courses': 'Courses', 'nav-cert': 'Certificate', 'nav-contact': 'Contact', 'langLabel': 'FI',
                 'hero-tag': "Finland's leading AI marketing education",
                 'hero-title': 'Make AI your<br><span class="pink">competitive edge</span>',
-                'hero-subtitle': "Practical training for marketing professionals, combining deep AI expertise with marketing know-how. Protect your career — learn to do more with AI.",
+                'hero-subtitle': "Practical training for marketing professionals, combining deep AI expertise with marketing know-how. Protect your career and learn to do more with AI.",
                 'hero-cta1': 'Explore courses', 'hero-cta2': 'Get in touch',
                 'stat1-label': 'of marketing tasks are changing due to AI in the coming years',
                 'hero-quote': '"AI won\'t replace marketers — but marketers who know AI will replace you."',
                 'about-label': 'Who we are', 'about-title': 'Two experts,<br>one mission',
-                'about-text': '<p>Grow Media Oy was born out of necessity. Marketing is changing faster than ever, and many professionals lack the tools to keep up.</p><p>We combined AI expertise and deep marketing knowledge to create courses that are entirely practical — not theories, but tools you can use tomorrow.</p><p>All our courses are designed so that after completing them, you know exactly what to do next.</p>',
+                'about-text': '<p>Grow Media Oy was born out of necessity. Marketing is changing faster than ever, and many professionals lack the tools to keep up.</p><p>We combined AI expertise and deep marketing knowledge to create courses that are entirely practical. Not theories, but tools you can use tomorrow.</p><p>All our courses are designed so that after completing them, you know exactly what to do next.</p>',
                 'team1-name': 'AI Expert', 'team1-role': 'Building AI &amp; automation',
                 'team2-name': 'Marketing Expert', 'team2-role': 'Strategy, content &amp; growth',
                 'team3-name': 'Together = more', 'team3-role': 'Technology + marketing = courses that work',
@@ -996,7 +1019,7 @@
                 'cert-title-text': 'AI Marketing Professional', 'cert-subtitle-text': 'Certificate of Completion', 'cert-issued': 'Issued by: Grow Media Oy · ESTD 2025',
                 'cb1': 'Complete the course and pass quizzes with 80% score', 'cb2': 'Receive your personal digital certificate', 'cb3': 'Add directly to your LinkedIn profile', 'cb4': 'Stand out to employers on your CV',
                 'contact-label': 'Contact', 'contact-title': "Let's connect",
-                'contact-subtitle': 'Have questions about courses or want more information? Write to us — we respond quickly.',
+                'contact-subtitle': 'Have questions about courses or want more information? Write to us.',
                 'footer-copy': '© 2025 Grow Media Oy · info@growmedia.fi',
             }
         };
